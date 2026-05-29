@@ -1,0 +1,170 @@
+\documentclass[compress,aspectratio=169]{beamer}
+\input{settings.tex}
+
+\title{中国石油大学（华东）Beamer模板}
+%\subtitle{一个简约的beamer模板}
+\author{xxx}
+\institute{xxx}
+\date{\today}
+\begin{document}
+
+% 每个section前都有目录
+% \AtBeginSection[]
+% {
+% \begin{frame}<beamer>{目录}
+% \tableofcontents[currentsection,currentsubsection, 
+%     hideothersubsections, 
+%     sectionstyle=show/shaded,
+% ]
+% \end{frame}
+% }
+
+% 标题页
+\begin{frame}[plain]
+  \begin{figure}
+	\vspace{-1.5cm}
+  	\includegraphics[width=0.5\linewidth]{logo.eps}
+  \end{figure}
+  \vspace{-2cm}
+  \titlepage
+\end{frame}
+
+% 目录页
+\begin{frame}{目录}
+	\tableofcontents[sectionstyle=show,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/shaded/hide]
+\end{frame}
+
+\section{字体与列表}
+\begin{frame}{字体样式}
+	这是一个正常字体\\
+	\textbf{这是加粗的字体}\\
+	{\Large 这是变大的字体}\\
+	{\small 这是变小的字体}\\
+	\structure{这是structure字体}\\
+	\alert{这是alert字体}\\
+	\textcolor{green}{这是带颜色的字体}\\
+	\href{https://www.baidu.com}{这是个超链接}
+\end{frame}
+
+\begin{frame}{列表}
+	\structure{无序列表}
+	\begin{itemize}
+		\item 项目1
+		\item 项目2
+		\item 项目3
+	\end{itemize}
+	\structure{有序列表}
+	\begin{enumerate}
+		\item 项目1
+		\item 项目2
+		\item 项目3
+	\end{enumerate}
+	\structure{描述列表}
+	\begin{description}
+		\item[项目1] 项目1描述
+		\item[项目2] 项目2描述  
+	\end{description}
+\end{frame}
+
+
+
+
+
+\section{图片与表格}
+\begin{frame}{图片}
+	\begin{figure}
+		\includegraphics[width=0.75\linewidth]{logo}
+		\caption{学院logo}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{表格}
+	\begin{table}[!t]  
+        \caption{三线表}
+        \begin{tabular}{ccc}  
+            \toprule   
+            first&second&third\\ 
+            \midrule       
+            1 & 2 & 3 \\ 
+            4 & 5 & 6 \\ 
+            7 & 8 & 9 \\
+            \bottomrule  
+    	\end{tabular}
+    \end{table}
+\end{frame}
+
+\section{块与分栏}
+
+\begin{frame}{Block}
+	\begin{block}{标题1}
+		这是一个普通的block\\
+		$$x+y=z$$
+	\end{block}
+
+	\begin{exampleblock}{标题2}
+		这是一个exmple block
+	\end{exampleblock}
+
+	\begin{alertblock}{标题3}
+		这是一个alert block
+	\end{alertblock}
+\end{frame}
+
+\begin{frame}{左右分栏}
+	\begin{columns}
+		\column{.5\textwidth}
+		\structure{无序列表}
+		\begin{itemize}
+			\item 项目1
+			\item 项目2
+			\item 项目3
+		\end{itemize}
+		\column{.5\textwidth}
+		\begin{figure}
+			\includegraphics[width=0.75\linewidth]{logo.eps}
+		\end{figure}
+	\end{columns}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+	\large
+	知乎：https://www.zhihu.com/people/nittaku-81
+\end{center}
+
+\begin{center}
+	\large
+	Github：https://github.com/maojinxiang
+\end{center}
+
+\begin{center}
+	\large
+	个人网页：https://maojinxiang.github.io
+\end{center}
+
+\begin{center}
+	\large
+	后续会继续更新相关内容，欢迎大家与我交流，共同进步！
+\end{center}
+
+
+
+
+
+
+
+
+\end{frame}
+
+
+
+\begin{frame}
+    \frametitle{}
+    \huge
+    \begin{center}
+        Thanks for your watching!
+    \end{center}
+\end{frame}
+
+
+\end{document}
